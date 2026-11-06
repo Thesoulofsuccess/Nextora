@@ -1,0 +1,9 @@
+# Nothing in this folder may be downloaded directly.
+# The brochure is served only through /download.php after the form; leads.csv stays private.
+<IfModule mod_authz_core.c>
+  Require all denied
+</IfModule>
+<IfModule !mod_authz_core.c>
+  Order allow,deny
+  Deny from all
+</IfModule>
